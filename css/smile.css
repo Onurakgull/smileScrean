@@ -1,0 +1,189 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap");
+* {
+  padding: 0;
+  margin: 0px;
+  list-style: none;
+  border: none;
+  text-decoration: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+  -webkit-overflow-scrolling: touch;
+}
+
+*:focus {
+  outline: 0;
+}
+
+body {
+  background: rgba(26, 43, 99, 0.7);
+  padding: 50px;
+}
+
+.component--feedback {
+  width: 380px;
+  background-color: #ffffff;
+  -webkit-box-shadow: 0 24px 27px -10px rgba(52, 87, 220, 0.13);
+          box-shadow: 0 24px 27px -10px rgba(52, 87, 220, 0.13);
+  padding: 30px 25px;
+  position: fixed;
+}
+
+.component--feedback.possition--tc {
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.component--feedback.possition--bc {
+  bottom: 30px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.component--feedback .message {
+  height: 0;
+  overflow: hidden;
+  -webkit-transition: 300ms height;
+  transition: 300ms height;
+}
+
+.component--feedback .message.active {
+  height: 122px;
+  padding-top: 25px;
+}
+
+.component--feedback .message p {
+  font-size: 12px;
+  color: #202842;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.component--feedback .message textarea {
+  width: 100%;
+  border: 1px solid #dcdff1;
+  border-radius: 5px;
+  height: 70px;
+  padding: 10px;
+  font-size: 12px;
+  color: #202842;
+  overflow: auto;
+}
+
+.component--feedback .message textarea:focus {
+  border-color: #3457dc;
+  caret-color: #3457dc;
+}
+
+.component--feedback .message textarea::-webkit-input-placeholder {
+  color: #5d698d;
+}
+
+.component--feedback .message textarea:-ms-input-placeholder {
+  color: #5d698d;
+}
+
+.component--feedback .message textarea::-ms-input-placeholder {
+  color: #5d698d;
+}
+
+.component--feedback .message textarea::placeholder {
+  color: #5d698d;
+}
+
+.component--feedback .face {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-right: -10px;
+}
+
+.component--feedback .face li {
+  width: 90px;
+  height: 90px;
+  border-radius: 10px;
+  margin-right: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.component--feedback .face li input {
+  display: none;
+}
+
+.component--feedback .face li.active {
+  background: #ffffff;
+  -webkit-box-shadow: 0 5px 15px -5px rgba(148, 165, 228, 0.7);
+          box-shadow: 0 5px 15px -5px rgba(148, 165, 228, 0.7);
+}
+
+.component--feedback .close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.component--feedback h5 {
+  width: 280px;
+  height: 58px;
+  padding: 0 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 14px;
+  font-weight: bold;
+  color: #202842;
+}
+
+.component--feedback .actions {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 25px;
+}
+
+.component--feedback .actions a {
+  font-size: 14px;
+  color: #5d698d;
+}
+
+.component--feedback .actions a:hover {
+  text-decoration: underline;
+}
+
+.component--feedback .actions button {
+  height: 40px;
+  background-color: #3457dc;
+  border-radius: 5px;
+  color: #ffffff;
+  cursor: pointer;
+  font-weight: bold;
+  padding: 0 20px;
+}
+
+.component--feedback .actions button:hover {
+  background: #2449d2;
+}
+/*# sourceMappingURL=smile.css.map */
